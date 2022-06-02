@@ -1,0 +1,7 @@
+.IdeaCardBox {
+  position: relative;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 36px;
+}
