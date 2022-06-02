@@ -37,9 +37,17 @@
   vertical-align: middle;
   font-weight: 600;
 }
-.ideaInfo{
-  font-size: $font-size-min;
+.ideaInfo {
+  font-size: $font-size1;
   display: flex;
   justify-content: center;
-  gap: 8px;
+  gap: 10px;
+  color: $font-color-grey2;
+  svg {
+    width: 18px;
+    height: 18px;
+    vertical-align: bottom;
+    margin-right: 2px;
+    cursor: pointer;
+  }
 }

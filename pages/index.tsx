@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import SiteNav from '../component/index/SiteNav'
+import SiteNav from '../component/common/SiteNav'
 import HomeMain from '../component/index/HomeMain'
 const Home: NextPage = () => {
   return (

@@ -1,7 +1,18 @@
+.HomeMainContainer {
+  width: 100vw;
+  overflow: hidden;
+}
 .IdeaCardBox {
   position: relative;
   padding: 0 24px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
   gap: 36px;
+}
+@media screen and (max-width: 640px) {
+  .IdeaCardBox {
+    padding: 0 12px;
+    gap: 18px;
+    grid-template-columns: repeat(2, minmax(225px, 1fr));
+  }
 }

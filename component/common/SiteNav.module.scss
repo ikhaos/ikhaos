@@ -1,38 +1,53 @@
 @import '../../styles/_variable.module.scss';
-.siteNavContainer{
+.siteNavContainer {
   width: 100vw;
   height: 68px;
   padding: 0 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  li{
+  gap: 12px;
+  li {
     color: #6e6d7a;
     font-weight: 700;
-    &:hover{
+    &:hover {
       color: #000;
     }
   }
 }
-.navContainer{
+.navContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 12px;
 }
-.siteActionContainer{
+.siteActionContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 12px;
-  .shareBtn{
+  li {
+    position: relative;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    svg {
+      width: 28px;
+    }
+  }
+  .shareBtn {
     padding: 10px 16px;
-    background-color: $theme-color;
+    background-color: $theme-color-violet5;
     color: #fff;
     border-radius: 8px;
-    &:hover{
+    &:hover {
       color: #fff;
       opacity: 0.8;
     }
+  }
+}
+@media screen and (max-width: 640px) {
+  .siteNavContainer {
+    padding: 0 12px;
   }
 }
