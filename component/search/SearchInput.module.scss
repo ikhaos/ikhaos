@@ -1,0 +1,44 @@
+.inputContainer {
+  position: relative;
+  @include flex-layout();
+  transform: translateY(-50%);
+}
+.searchSvg {
+  svg {
+    position: absolute;
+    width: 28px;
+    left: 12px;
+  }
+}
+.inputWrapper {
+  position: relative;
+  height: 60px;
+}
+.inputBox {
+  width: 50vw;
+  height: 60px;
+  border: none;
+  outline: none;
+  padding: 15px 50px 15px 50px;
+  background-color: #fff;
+  font-size: $font-size4;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+.selectBox {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 60px;
+  display: inline-block;
+}
+@media screen and (max-width: 640px) {
+  .inputWrapper {
+    width: calc(100vw - 24px);
+    margin: 0 12px;
+  }
+  .inputBox {
+    width: 100%;
+  }
+}
