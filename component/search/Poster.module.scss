@@ -1,3 +1,17 @@
 .PosterContainer{
   width: 100vw;
+  height: 300px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-direction: column;
+  background-color: $theme-color-violet3;
+}
+.title{
+  font-size: $font-size-title;
+}
+.subtitle{
+  font-size: $font-size-subtitle;
 }
