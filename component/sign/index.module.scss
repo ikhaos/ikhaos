@@ -1,0 +1,15 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: $theme-color-violet5;
+
+  .sidebar {
+    width: 40%;
+    height: 100%;
+  }
+
+  .content {
+    width: 60%;
+    height: 100%;
+  }
+}

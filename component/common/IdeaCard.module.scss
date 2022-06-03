@@ -1,9 +1,10 @@
-@import '../../styles/variable.module';
+// @import '../../styles/variable.module';
 .IdeaCardContainer {
   position: relative;
   height: 100%;
   align-items: center;
 }
+
 .ideaCover {
   position: relative;
   height: 0;
@@ -11,9 +12,11 @@
   overflow: hidden;
   border-radius: 8px;
 }
+
 .ideaCover img {
   width: 100%;
 }
+
 .cardDetail {
   display: flex;
   justify-content: space-between;
@@ -22,6 +25,7 @@
   height: 24px;
   margin-top: 12px;
 }
+
 .photoImg {
   position: relative;
   display: inline-block;
@@ -31,18 +35,21 @@
   height: 24px;
   vertical-align: middle;
 }
+
 .username {
   display: inline-block;
   margin-left: 8px;
   vertical-align: middle;
   font-weight: 600;
 }
+
 .ideaInfo {
   font-size: $font-size1;
   display: flex;
   justify-content: center;
   gap: 10px;
   color: $font-color-grey2;
+
   svg {
     width: 18px;
     height: 18px;

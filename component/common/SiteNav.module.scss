@@ -1,4 +1,4 @@
-@import '../../styles/_variable.module.scss';
+// @import '../../styles/_variable.module.scss';
 .siteNavContainer {
   width: 100vw;
   height: 68px;
@@ -7,45 +7,54 @@
   justify-content: space-between;
   align-items: center;
   gap: 12px;
+
   li {
     color: #6e6d7a;
     font-weight: 700;
+
     &:hover {
       color: #000;
     }
   }
 }
+
 .navContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 12px;
 }
+
 .siteActionContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 12px;
+
   li {
     position: relative;
     white-space: nowrap;
     display: flex;
     align-items: center;
+
     svg {
       width: 28px;
     }
   }
+
   .shareBtn {
     padding: 10px 16px;
     background-color: $theme-color-violet5;
     color: #fff;
     border-radius: 8px;
+
     &:hover {
       color: #fff;
       opacity: 0.8;
     }
   }
 }
+
 @media screen and (max-width: 640px) {
   .siteNavContainer {
     padding: 0 12px;
