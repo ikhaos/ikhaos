@@ -20,14 +20,14 @@
     height: 100%;
     background-color: $theme-color-violet2;
     text-align: center;
-    color: $font-color-grey0;
+    color: $color-grey0;
 
     .logo {
       margin-top: 50px;
       font-size: $font-size-subtitle;
 
       :hover {
-        color: $font-color-grey1;
+        color: $color-grey1;
       }
     }
 
@@ -70,12 +70,12 @@
       position: relative;
       margin: 15px 0;
       height: 1px;
-      background-color: rgba($color: $font-color-grey3, $alpha: 0.3);
+      background-color: rgba($color: $color-grey3, $alpha: 0.3);
 
       &::before {
         content: 'Or';
         background-color: #fff;
-        color: $font-color-grey3;
+        color: $color-grey3;
         padding: 0 10px;
         position: absolute;
         top: 50%;
@@ -108,7 +108,7 @@
           height: $font-size-title;
           border: none;
           outline: none;
-          background-color: rgba($font-color-grey3, 0.25);
+          background-color: rgba($color-grey3, 0.25);
           border-radius: 10px;
           padding: 0 10px;
           transition: all 0.5s;
