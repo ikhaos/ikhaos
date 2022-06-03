@@ -2,6 +2,7 @@
   position: relative;
   @include flex-layout();
   transform: translateY(-50%);
+  z-index: 2;
 }
 .searchSvg {
   svg {
@@ -31,6 +32,7 @@
   right: 0;
   width: 100px;
   height: 60px;
+
   display: inline-block;
 }
 @media screen and (max-width: 640px) {
