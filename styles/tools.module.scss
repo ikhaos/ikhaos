@@ -12,8 +12,3 @@
   justify-content: $justify-content;
   align-items: $align-items;
 }
-
-.box {
-  width: 100px;
-  @include text-overflow-ellipsis-line(2);
-}
