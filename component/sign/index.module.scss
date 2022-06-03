@@ -1,15 +1,138 @@
+@mixin btn {
+  font-size: $font-size1;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
 .container {
   width: 100vw;
   height: 100vh;
-  background-color: $theme-color-violet5;
+  @include flex-layout;
 
   .sidebar {
     width: 40%;
     height: 100%;
+    background-color: $theme-color-violet2;
+    text-align: center;
+    color: $color-grey0;
+
+    .logo {
+      margin-top: 50px;
+      font-size: $font-size-subtitle;
+
+      :hover {
+        color: $color-grey1;
+      }
+    }
+
+    .desc {
+      margin-top: 120px;
+      font-size: $font-size-title;
+      font-weight: bold;
+    }
   }
 
   .content {
     width: 60%;
     height: 100%;
+    padding: 0 10%;
+    @include flex-layout($flex-direction: column);
+
+    section {
+      width: 100%;
+    }
+
+    .loginConatin {
+      p {
+        font-size: $font-size-subtitle;
+        font-weight: bold;
+      }
+
+      button {
+        margin: 15px 0;
+        width: 300px;
+        background-color: #00ADEE;
+        @include btn;
+
+        &:hover {
+          background-color: lighten($color: #00ADEE, $amount: 10);
+        }
+      }
+    }
+
+    .divider {
+      position: relative;
+      margin: 15px 0;
+      height: 1px;
+      background-color: rgba($color: $color-grey3, $alpha: 0.3);
+
+      &::before {
+        content: 'Or';
+        background-color: #fff;
+        color: $color-grey3;
+        padding: 0 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .formContain {
+
+      .itemContain {
+        width: 100%;
+        margin: 20px 0;
+
+        p {
+          font-size: $font-size3;
+          font-weight: bold;
+
+          .textlink {
+            font-size: $font-size1;
+            font-weight: 200;
+            color: $theme-color-violet5;
+            cursor: pointer;
+          }
+        }
+
+        input {
+          margin: 10px 0;
+          width: 100%;
+          height: $font-size-title;
+          border: none;
+          outline: none;
+          background-color: rgba($color-grey3, 0.25);
+          border-radius: 10px;
+          padding: 0 10px;
+          transition: all 0.5s;
+
+          &:focus {
+            background-color: #fff;
+            border: 1px solid $theme-color-violet2;
+          }
+        }
+
+        .verifyTitle {
+          @include flex-layout($justify-content: space-between);
+        }
+      }
+
+      button {
+        width: 150px;
+        background-color: $theme-color-violet5;
+        @include btn;
+
+        &:hover {
+          background-color: lighten($theme-color-violet5, 10);
+        }
+      }
+    }
   }
 }
